@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<machine xmlns="http://www.hsmworks.com/xml/2009/machine">
+
+  <vendor>Carbide 3D - Definition by Bert Vanhooff</vendor>
+
+  <model>XXL</model>
+
+  <description>Shapeoko 3</description>
+
+  <control></control>
+
+  <machining additive="no" jet="no" milling="yes" turning="no"/>
+
+  <dimensions depth="1023.62mm" height="0mm" weight="68kg" width="1137mm"/>
+
+  <capacities depth="838.20000000000005mm" height="76.200000000000003mm" weight="0kg" width="838.20000000000005mm"/>
+
+  <coolant options=""/>
+
+  <multiAxis adjust="yes" angle="10deg" cone="3deg" linearizationTolerance="0.040000000000000001mm" method="off" tolerance="0.040000000000000001mm"/>
+
+  <tooling maximumToolDiameter="0mm" maximumToolLength="0mm" maximumToolWeight="0kg" numberOfTools="100" toolChanger="no" toolPreload="no"/>
+
+  <machiningTime ratio="1" toolChangeTime="120s"/>
+
+  <home x="0mm" y="0mm" z="0mm"/>
+
+  <capabilities maximumBlockProcessingSpeed="0" maximumFeedrate="0mm/min" workOffsets="100"/>
+
+  <simulation retractOnIndexing="yes" shortestAngularRotation="yes" wcs="0mm 0mm 0mm">
+    <machineAssembly></machineAssembly>
+  </simulation>
+
+  <post>
+    <postProcessor>cloud://carbide3d.cps</postProcessor>
+    <postProperties>
+      <Parameters>
+        <Parameter expression="true" name="separateWordsWithSpace" value="true"/>
+        <Parameter expression="1" name="sequenceNumberIncrement" value="1"/>
+        <Parameter expression="10" name="sequenceNumberStart" value="10"/>
+        <Parameter expression="false" name="showSequenceNumbers" value="false"/>
+        <Parameter expression="true" name="writeMachine" value="true"/>
+        <Parameter expression="true" name="writeTools" value="true"/>
+      </Parameters>
+    </postProperties>
+    <setupSheet>cloud://</setupSheet>
+    <setupSheetProperties>
+      <Parameters/>
+    </setupSheetProperties>
+  </post>
+
+  <axis actuator="linear" id="X" link="table" maximumFeed="0mm/min" range="0mm 0mm" resolution="0mm"/>
+
+  <axis actuator="linear" id="Y" link="table" maximumFeed="0mm/min" range="0mm 0mm" resolution="0mm"/>
+
+  <axis actuator="linear" id="Z" link="table" maximumFeed="0mm/min" range="0mm 0mm" resolution="0mm"/>
+
+  <spindle axis="0 0 1" maximumPower="0.70999999999999996kW" maximumSpeed="23000rpm" minimumSpeed="10000rpm">
+    <description>Makita RT0700C</description>
+  </spindle>
+
+</machine>
