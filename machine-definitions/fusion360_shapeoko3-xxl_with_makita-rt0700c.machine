@@ -49,11 +49,11 @@
     </setupSheetProperties>
   </post>
 
-  <axis actuator="linear" id="X" link="table" maximumFeed="0mm/min" range="0mm 0mm" resolution="0mm"/>
+  <axis actuator="linear" id="X" link="table" maximumFeed="5000mm/min" range="0mm 0mm" resolution="0mm"/>
 
-  <axis actuator="linear" id="Y" link="table" maximumFeed="0mm/min" range="0mm 0mm" resolution="0mm"/>
+  <axis actuator="linear" id="Y" link="table" maximumFeed="5000mm/min" range="0mm 0mm" resolution="0mm"/>
 
-  <axis actuator="linear" id="Z" link="table" maximumFeed="0mm/min" range="0mm 0mm" resolution="0mm"/>
+  <axis actuator="linear" id="Z" link="table" maximumFeed="5000mm/min" range="0mm 0mm" resolution="0mm"/>
 
   <spindle axis="0 0 1" maximumPower="0.70999999999999996kW" maximumSpeed="23000rpm" minimumSpeed="10000rpm">
     <description>Makita RT0700C</description>
