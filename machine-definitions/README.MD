@@ -14,6 +14,7 @@ load > select the machine file`,.
 ## Shapeoko 3 XXL + Makita RT0700C
 
 [fusion360_shapeoko3-xxl_with_makita-rt0700c.machine](fusion360_shapeoko3-xxl_with_makita-rt0700c.machine)
+ (Click link → right-click 'Raw' → save as..)
 
 Sources to get the right parameters:
 * https://shop.carbide3d.com/products/shapeoko-xl-kit?variant=42721938758
